@@ -16,5 +16,13 @@ namespace Doctor.Con.Models
         }
 
         public DbSet<Clinic> Clinics { get; set; }
+
+        public DbSet<Patient> Patients { get; set; }
+
+        public DbSet<Doctor> Doctors { get; set; }
+
+        public DbSet<Profession> Professions { get; set; }
+
+        public DbSet<Record> Records { get; set; }
     }
 }

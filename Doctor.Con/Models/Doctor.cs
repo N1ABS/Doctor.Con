@@ -14,5 +14,8 @@ namespace Doctor.Con.Models
         public int ProfessionId { get; set; }
         public int ClinicId { get; set; }
         public double Rating { get; set; }
+
+        public virtual Profession Profession { get; set; }
+        public virtual Clinic Clinic { get; set; }
     }
 }

@@ -8,11 +8,15 @@ namespace Doctor.Con.Models
     public class Review
     {
         public int Id { get; set; }
-        public int UserId { get; set; }
+        public int ApplicationUserId { get; set; }
         public byte TargetReview { get; set; }
         public string Text { get; set; }
         public double Rating { get; set; }
         public int ClinicId { get; set; }
         public int DoctorId { get; set; }
+
+        public virtual ApplicationUser ApplicationUser { get; set; }
+        public virtual Clinic Clinic { get; set; }
+        public virtual Doctor Doctor { get; set; }
     }
 }

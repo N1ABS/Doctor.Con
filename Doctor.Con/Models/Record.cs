@@ -10,7 +10,11 @@ namespace Doctor.Con.Models
         public int Id { get; set; }
         public int PatientId { get; set; }
         public int DoctorId { get; set; }
-        public DateTime RecordId { get; set; }
+        public DateTime RecordDate{ get; set; }
         public string Comments { get; set; }
+
+        public virtual Patient Patient { get; set; }
+        public virtual Doctor Doctor { get; set; }
+
     }
 }
