@@ -7,12 +7,12 @@ namespace Doctor.Con.Models
 {
     public class Doctor
     {
-        public int Id { get; set }
-        public string FirstName { get; set }
-        public string LastName { get; set }
-        public string Phone { get; set }
-        public int ProfessionId { get; set }
-        public int ClinicId { get; set }
-        public double Rating { get; set }
+        public int Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Phone { get; set; }
+        public int ProfessionId { get; set; }
+        public int ClinicId { get; set; }
+        public double Rating { get; set; }
     }
 }
