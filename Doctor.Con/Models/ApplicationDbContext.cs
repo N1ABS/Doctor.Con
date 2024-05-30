@@ -24,5 +24,6 @@ namespace Doctor.Con.Models
         public DbSet<Profession> Professions { get; set; }
 
         public DbSet<Record> Records { get; set; }
+        public DbSet<Review> Reviews { get; set; }
     }
 }
